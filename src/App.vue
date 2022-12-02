@@ -8,6 +8,12 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
+  <!-- <div id="nav">
+    <router-link to="/">Home</router-link>
+  </div>
+  <div class="app-container">
+    <RouterView />
+  </div> -->
   <HelloWorld />
   <Header> </Header>
   <Hero></Hero>
