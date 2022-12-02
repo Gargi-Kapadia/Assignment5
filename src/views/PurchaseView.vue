@@ -1,11 +1,9 @@
 <script setup>
-import { ref } from "vue";
-import { useRouter } from "vue-router";
 
 </script>
 
 <template>
-
+<h1>Movies</h1>
 </template>
 
 <style scoped>
