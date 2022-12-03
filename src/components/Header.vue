@@ -1,16 +1,23 @@
 <script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+   const button = () => {
+router.push("/Login");
+}
 </script>
 
 <template>
 <div>
 <h1>Movies.CO</h1>
-<button class="button">Login</button>
+<button @click="button()" class="button">Login</button>
 </div>
 </template>
 
 <style scoped>
 .button {
-    background-color: darkgray;
+    background-color: lightgray;
     margin-bottom: 50px;
 }
 
