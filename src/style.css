@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #fdfdfd;
+  background-color: #213547;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,7 +18,7 @@
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: #213547;
+  color: #fdfdfd;
 }
 
 button, .submit {

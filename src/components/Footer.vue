@@ -10,6 +10,6 @@ all your entertaniment needs.
 
 <style scoped>
 p {
-    color: #213547;
+    color: #fdfdfd;
 }
 </style>

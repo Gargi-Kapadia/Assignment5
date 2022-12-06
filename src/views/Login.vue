@@ -34,7 +34,7 @@ const login = () => {
 
 <style scoped>
 .login-container {
-  background-color:	#e3dac9;
+  background-color:	#213547;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@ form input {
   font-weight: bold;
 }
 .error {
-    color: rgb(151, 5, 5);
+    color: #fbff1b;
     font-size: 1.5rem;
     font-weight: bolder;
 }
