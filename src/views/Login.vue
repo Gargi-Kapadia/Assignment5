@@ -1,4 +1,5 @@
 <script setup>
+import PurchaseView from "../views/PurchaseView.vue";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
@@ -36,7 +37,7 @@ const login = () => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 120vw;
   height: 120vh;
   font-size: 3.5rem;
   margin-top: -12rem;
