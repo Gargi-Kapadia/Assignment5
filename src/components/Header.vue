@@ -16,6 +16,9 @@ router.push("/Login");
 </template>
 
 <style scoped>
+div {
+    text-align: center;
+}
 .button {
     background-color: lightgray;
     margin-bottom: 50px;
@@ -25,6 +28,7 @@ h1 {
     font-size: 100px;
     margin-bottom: 5px;
     margin-top: 5px;
+    text-align: center;
 }
 
 </style>

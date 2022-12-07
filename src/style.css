@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -6,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #213547;
+  background-color: #0c1427;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,13 +46,13 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 .submit:hover {
   border-color: rgb(70, 70, 70);
   border-width: 2px;
-}
+} 

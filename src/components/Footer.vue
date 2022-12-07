@@ -11,5 +11,6 @@ all your entertaniment needs.
 <style scoped>
 p {
     color: #fdfdfd;
+    text-align: center;
 }
 </style>

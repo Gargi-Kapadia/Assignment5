@@ -1,4 +1,5 @@
 <script setup>
+import PurchaseView from "../views/PurchaseView.vue";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -11,7 +12,6 @@ const login = () => {
   if (username.value === "Tmdb" && password.value === "Movies") {
     console.log('correct');
     router.push("/purchase");
-
   } else {
     error.value = true;
   }
@@ -39,7 +39,7 @@ const login = () => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 120vw;
   height: 120vh;
   font-size: 3.5rem;
   margin-top: -12rem;
