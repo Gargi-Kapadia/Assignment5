@@ -1,8 +1,20 @@
 <script setup>
 import Footer from "../components/Footer.vue";
+import SiteModal from '../components/SiteModal.vue';
    import { ref } from "vue";
    import axios from "axios"
+ 
+const showModal = ref(false);
+const selectedId = ref(0);
 
+const openModal = (id) => {
+  showModal.value = true;
+  selectedId.value = id;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
    const movies = ref("");
    const response = ref(null);
     
@@ -37,9 +49,10 @@ const getData = async (url, params) => {
       <p id="vote_average">Vote Average: <br>{{ result.vote_average }}</p>
       <p id="popularity">Popularity: <br>{{ result.popularity }}</p>
       <p id="revenue">Revenue: $ {{ result.revenue }}</p> -->
-      <img v-bind:src="'https://image.tmdb.org/t/p/w500' + result.poster_path" /> 
+      <img @click="openModal(300)" v-bind:src="'https://image.tmdb.org/t/p/w500' + result.poster_path" /> 
     <!-- <div v-for="genre in response.genres">
       <p>{{ genre.name }}</p> --> 
+<SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
 </div>
 <div class="footer">
 <Footer></Footer>
