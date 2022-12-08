@@ -49,7 +49,7 @@ const getData = async (url, params) => {
       <p id="vote_average">Vote Average: <br>{{ result.vote_average }}</p>
       <p id="popularity">Popularity: <br>{{ result.popularity }}</p>
       <p id="revenue">Revenue: $ {{ result.revenue }}</p> -->
-      <img @click="openModal(300)" v-bind:src="'https://image.tmdb.org/t/p/w500' + result.poster_path" /> 
+      <img @click="openModal(436270)" v-bind:src="'https://image.tmdb.org/t/p/w500' + result.poster_path" /> 
     <!-- <div v-for="genre in response.genres">
       <p>{{ genre.name }}</p> --> 
 <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
@@ -68,10 +68,13 @@ const getData = async (url, params) => {
   gap: 10px;
   margin-bottom: -300px;
   padding-bottom: -50px;
+  margin-right: -10px;
+  margin-left: 15px;
 }
 img {
  height: 50%;
- border-radius: 0.5rem;
+ border-radius: 1rem;
+ padding: 10px;
 }
 h1 {
   text-align: center;

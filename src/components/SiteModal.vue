@@ -34,6 +34,7 @@ const emits = defineEmits(["toggleModal"]);
   width: clamp(280px, 100%, 800px);
   height: 400px;
   position: relative;
+  border-radius: 0.5px;
 }
 
 .modal-outer-container .modal-inner-container .close-button {
