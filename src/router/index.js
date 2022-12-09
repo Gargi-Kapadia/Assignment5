@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
-import Login from "../views/Login.vue";
+import HomeVue from "../views/HomeVue.vue";
+import LoginVue from "../views/LoginVue.vue";
 import PurchaseView from "../views/PurchaseView.vue";
 
 const router = createRouter({
@@ -8,13 +8,13 @@ const router = createRouter({
   routes: [
       {
         path: '/',
-        name: 'Home',
-        component: Home
+        name: 'HomeVue',
+        component: HomeVue
       },
     {
       path: '/Login',
-      name: 'Login',
-      component: Login
+      name: 'LoginVue',
+      component: LoginVue
     },
     {
         path: '/purchase',

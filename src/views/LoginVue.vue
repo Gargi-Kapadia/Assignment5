@@ -1,5 +1,4 @@
 <script setup>
-import PurchaseView from "../views/PurchaseView.vue";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
@@ -66,5 +65,9 @@ form input {
 .submit {
     background-color: lightgray;
     border-radius: 5px;
+}
+h1 {
+  margin-bottom: 100px;
+  font-size: 200px;
 }
 </style>
